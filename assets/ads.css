@@ -216,3 +216,6 @@ h1,h2,h3,.pain-close,.author .lead,.pillar h3{background:linear-gradient(180deg,
 .pain-close .tick{display:block;margin-top:6px}.pain-close .tick::before{content:"\2714\FE0E";margin-right:10px;font-family:Arial,sans-serif;font-size:.8em}
 .pain-close .tick:first-of-type{margin-top:14px}
 .tools-p p.tick::before{content:"\2714\FE0E";margin-right:10px;color:var(--gold-1);font-family:Arial,sans-serif;font-size:.85em}
+.pain-close{font-size:26px}.pain-close .tick{font-size:24px}
+.t-head .kg{font-family:'Playfair Display',serif;font-weight:700;font-size:56px;line-height:1;color:var(--gold-1)}
+.t-head .kg+div{margin-top:2px}
