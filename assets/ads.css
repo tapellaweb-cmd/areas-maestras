@@ -220,7 +220,7 @@ h1,h2,h3,.pain-close,.author .lead,.pillar h3{background:linear-gradient(180deg,
 .t-head .kg{font-family:'Playfair Display',serif;font-weight:700;font-size:56px;line-height:1;color:var(--gold-1)}
 .t-head .kg+div{margin-top:2px}
 .price-save.renov{margin:18px auto 0;padding-top:14px;border-top:1px solid var(--gold-2);max-width:300px}
-.quote-band{text-align:center;padding:44px 0 40px}
+.quote-band{text-align:center;padding:16px 0 92px}
 .quote-band .q-icon{display:block;font-family:'Playfair Display',serif;font-size:64px;line-height:.6;color:var(--gold-2);margin-bottom:6px}
 .quote-band .q-text{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:30px;line-height:1.3;color:var(--text);max-width:720px;margin:0 auto}
 .quote-band .q-by{margin-top:14px;font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-1)}
