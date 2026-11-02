@@ -230,3 +230,17 @@ h1,h2,h3,.pain-close,.author .lead,.pillar h3{background:linear-gradient(180deg,
 .tools-p .tools-item.tick{font-family:'Inter',sans-serif;font-weight:400;font-size:19px;line-height:1.6;color:var(--text);margin:0 0 14px}
 .tools-p .tools-item.tick::before{content:"\2714\FE0E";color:var(--gold-1);margin-right:10px;font-family:Arial,sans-serif;font-size:.85em}
 .author .q-icon{display:block;font-family:'Playfair Display',serif;font-size:64px;line-height:.6;color:var(--gold-2);margin:6px 0 10px}
+
+.pay-alt{max-width:560px;margin:40px auto 0;padding:28px 24px;border:1px solid var(--gold-2);border-radius:14px;text-align:center}
+.pay-alt h3{font-size:24px;margin:0 0 6px}
+.pay-rate{font-size:15px;opacity:.8;margin:0 0 18px}
+.pay-rows{display:grid;gap:8px;margin-bottom:18px}
+.pay-rows div{display:flex;justify-content:space-between;gap:12px;font-size:18px}
+.pay-data{font-size:18px;line-height:1.6;margin:0 0 20px}
+.pay-ext{font-size:15px;opacity:.85;margin:18px 0 0}
+.pay-ext a{color:var(--gold-2);text-decoration:underline}
+
+.price-ars{display:block;font-size:14px;opacity:.75;margin-top:2px}
+.pay-rows b small{font-size:13px;font-weight:400;opacity:.75}
+.pay-rows span small{font-size:14px;opacity:.75}
+.price-ars{opacity:1}.price-ars b{display:block;font-size:22px;font-weight:400;color:#fff}.price-ars i{display:block;font-size:13px;font-style:normal;opacity:.7;margin-top:2px}
