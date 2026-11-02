@@ -178,8 +178,8 @@ h1,h2,h3,.pain-close,.author .lead,.pillar h3{background:linear-gradient(180deg,
 .tools-p .tools-close{margin-top:22px;font-family:'Playfair Display',serif;font-weight:700;font-size:24px;line-height:1.35;color:var(--gold-1)}
 .t-aporte{margin:12px 0 0;font-size:13.5px;font-style:italic;color:var(--text-dim)}
 .plans-book{max-width:190px;margin:0 auto 26px}
-.author .author-circle{width:130px;height:130px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-2);max-width:none;margin:0 auto}
-@media(min-width:820px){.author:has(.author-circle){grid-template-columns:130px 1fr;gap:36px}.author .author-circle{margin:0}}
+.author .author-circle{width:150px;height:150px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-2);max-width:none;margin:0 auto}
+@media(min-width:820px){.author:has(.author-circle){grid-template-columns:150px 1fr;gap:36px}.author .author-circle{margin:0}}
 .pain-band{background:var(--navy-1)}
 
 .tools-p .tools-choice{margin-top:18px;font-family:'Playfair Display',serif;font-weight:700;font-size:22px;line-height:1.4;color:var(--text)}
