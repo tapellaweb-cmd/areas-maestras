@@ -282,5 +282,33 @@ src="https://www.facebook.com/tr?id=4065911757006473&ev=PageView&noscript=1"
   });
 })();
 </script>
+<script>
+/* Seguimiento del recorrido (Meta Pixel): scroll, tiempo, precios a la vista y clics */
+(function(){
+  var hecho={};
+  function ev(n,std){ if(hecho[n])return; hecho[n]=1; try{ if(typeof fbq==='function'){ if(std){fbq('track',n);}else{fbq('trackCustom',n);} } }catch(e){} }
+  setTimeout(function(){ev('Tiempo15s')},15000);
+  setTimeout(function(){ev('Tiempo45s')},45000);
+  function scroll(){
+    var d=document.documentElement, p=(window.pageYOffset+window.innerHeight)/d.scrollHeight;
+    if(p>=.25)ev('Scroll25'); if(p>=.5)ev('Scroll50'); if(p>=.75)ev('Scroll75'); if(p>=.95)ev('Scroll95');
+  }
+  window.addEventListener('scroll',scroll,{passive:true});
+  function ver(id,nombre,std){
+    var el=document.getElementById(id);
+    if(!el||!('IntersectionObserver' in window))return;
+    var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ ev(nombre,std); o.disconnect(); } }); },{threshold:.2});
+    o.observe(el);
+  }
+  ver('bonus','VioBonus',false);
+  ver('comprar','ViewContent',true);
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a'); if(!a)return;
+    var h=a.getAttribute('href')||'';
+    if(h==='#comprar')ev('ClicBotonVerPrecio');
+    if(h.indexOf('wa.me')>-1)ev('ClicWhatsApp');
+  });
+})();
+</script>
 </body>
 </html>
