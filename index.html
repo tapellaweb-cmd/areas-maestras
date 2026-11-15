@@ -56,6 +56,31 @@ src="https://www.facebook.com/tr?id=4065911757006473&ev=PageView&noscript=1"
 <style>.pay-mini{color:var(--gold-2)!important;font-size:13px!important;opacity:1!important}.pay-big{display:block!important;text-align:center;font-size:22px;color:#fff;margin:6px 0 4px;width:100%}.pay-alt .pay-rows>div.pay-big{justify-content:center!important}.plans-head{margin-bottom:22px}</style>
 <style>@media(min-width:900px){.pay-alt>.pay-rows{grid-row:2!important}.pay-alt>h3{grid-row:1!important;align-self:end}.pay-alt>.pay-rows{align-self:start}}</style>
 <style>.bonus-word{font-family:Inter,sans-serif;font-weight:800;letter-spacing:.16em;font-size:clamp(40px,7vw,60px);line-height:1;color:var(--gold-2);background:linear-gradient(180deg,var(--gold-1),var(--gold-2) 60%,var(--gold-3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}.bonus-sub{margin-top:8px;font-size:clamp(16px,2.6vw,20px);letter-spacing:.12em;text-transform:uppercase;color:var(--text)}.gold-bonus{color:var(--gold-2)!important;font-weight:800}.hero-note b{color:var(--gold-2)!important}.plan-main>h3,.pay-alt>h3{font-size:clamp(26px,3.4vw,36px)!important}.price-ars b{font-size:30px!important}.pay-big{font-size:30px!important}</style>
+<style>
+.hero-video{grid-area:vid;justify-self:center;width:min(86vw,340px);margin:4px auto 6px}
+.hero-video .vtag{margin:0 0 10px;text-align:center;font-size:clamp(15px,4vw,18px);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-1);font-weight:600}
+.vframe{position:relative;aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;border:2px solid var(--gold-2);box-shadow:0 18px 44px rgba(0,0,0,.55)}
+.vframe video{width:100%;height:100%;object-fit:cover;display:block}
+.vsound{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:2;border:0;cursor:pointer;background:var(--gold-2);color:#0b0f18;font:800 14px/1 Inter,sans-serif;letter-spacing:.03em;padding:12px 16px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.5);white-space:nowrap;animation:vp 1.8s ease-in-out infinite}
+.vsound.off{display:none}
+@keyframes vp{50%{transform:translateX(-50%) scale(1.06)}}
+.hero-grid{grid-template-areas:"head" "vid" "eyebrow" "mock" "title" "btn"!important}.hero-grid .hero-text{display:contents!important}.hero-grid .hero-text .eyebrow{grid-area:eyebrow;text-align:center}.hero-grid .hero-text .hero-title{grid-area:title}.hero-grid .hero-text>.btn{grid-area:btn!important;justify-self:center}
+/* BONUS más chico (todas las pantallas) */
+.hero-title .hero-note{font-size:clamp(16px,4.2vw,19px)!important;padding:12px 16px!important;max-width:420px!important;line-height:1.35!important;margin:2px auto 18px!important}
+.hero-title .hero-note b{font-size:clamp(22px,5.6vw,28px)!important;margin-bottom:4px!important;letter-spacing:.12em!important}
+@media(min-width:820px){
+.hero-grid{max-width:1080px!important;grid-template-columns:minmax(0,1fr) 340px!important;grid-template-areas:"head vid" "eyebrow vid" "mock vid" "title vid" "btn vid"!important;grid-template-rows:auto auto 1fr auto auto!important;align-content:stretch!important;column-gap:64px!important;row-gap:10px!important;align-items:start!important}
+.hero-head{align-self:end!important;text-align:left!important}
+.hero-head h1,.hero-head p{text-align:left!important;margin-left:0!important}
+.hero-grid .hero-text{display:contents!important}.hero-grid .hero-text .eyebrow{grid-area:eyebrow;text-align:left}.hero-grid .hero-text .hero-title{grid-area:title}.hero-grid .hero-text>.btn{grid-area:btn!important;justify-self:start!important;align-self:end!important;margin:0!important}
+.hero-grid .hero-text .eyebrow{display:block;margin-bottom:14px}
+.hero-title{margin:0!important;width:100%!important;min-width:0!important}
+.hero-title .hero-note{text-align:left!important;max-width:460px!important;margin:4px 0 14px!important;font-size:18px!important}
+.hero-title .hero-note b{font-size:26px!important}
+.hero-video{margin:0!important;width:340px;align-self:center}
+.hero-grid .mockup{justify-self:start;width:100%!important;max-width:480px!important;margin:0!important;align-self:center!important}.hero-video{align-self:stretch!important;display:flex;flex-direction:column;justify-content:center}
+}
+</style>
 </head>
 <body>
 
@@ -66,8 +91,15 @@ src="https://www.facebook.com/tr?id=4065911757006473&ev=PageView&noscript=1"
   </nav>
   <div class="container hero-grid">
     <div class="hero-head"><h1 class="hero-main"><span class="gold">Cambiá tu vida</span></h1><p class="hero-sub">Mentoría + libros</p></div>
+    <div class="hero-video">
+      <p class="vtag">Mirá este video antes de seguir</p>
+      <div class="vframe">
+        <video id="introVideo" src="assets/video/intro.mp4" poster="assets/video/poster.jpg" muted autoplay playsinline loop preload="metadata"></video>
+        <button type="button" class="vsound" id="vSound">🔊 Tocá para activar el sonido</button>
+      </div>
+    </div>
     <div class="hero-text" style="text-align:center">
-      <span class="eyebrow">Para quien está dispuesto a: cambiar su vida, sus vínculos, sus logros personales o su negocio / profesión</span>
+      <span class="eyebrow">Para quien está dispuesto a: cambiar su vida, su economía, sus vínculos, sus logros personales o su negocio / profesión</span>
       <div class="hero-title"><p class="hero-note" style="margin:4px auto 26px;max-width:520px;padding:20px 26px;box-sizing:border-box;border:1px solid var(--gold-2);border-top:4px solid var(--gold-2);border-radius:12px;background:rgba(216,174,86,.12);font-family:'Playfair Display',serif;font-style:italic;font-size:26px;line-height:1.4;color:var(--gold-1);text-align:center"><b style="font-style:normal;font-family:Inter,sans-serif;font-weight:800;letter-spacing:.14em;font-size:44px;line-height:1;display:block;margin-bottom:8px;color:var(--gold-1)">BONUS</b>Te muestro el paso a paso que hice yo para convertir mi experiencia en un negocio digital.</p></div>
       <a href="#comprar" class="btn btn-lg">Quiero la mentoría →</a>
     </div>
@@ -301,6 +333,17 @@ src="https://www.facebook.com/tr?id=4065911757006473&ev=PageView&noscript=1"
     if(h==='#comprar')ev('ClicBotonVerPrecio');
     if(h.indexOf('wa.me')>-1)ev('ClicWhatsApp');
   });
+})();
+</script>
+<script>
+(function(){var v=document.getElementById('introVideo'),b=document.getElementById('vSound');if(!v||!b)return;
+var played=false;
+b.addEventListener('click',function(){v.currentTime=0;v.loop=false;v.muted=false;v.play();b.classList.add('off');
+ if(typeof fbq==='function')fbq('trackCustom','VideoIntroSonido');});
+v.addEventListener('play',function(){if(!played){played=true;if(typeof fbq==='function')fbq('trackCustom','VideoIntroPlay');}});
+v.addEventListener('click',function(){if(!v.muted){v.paused?v.play():v.pause();}});
+if('IntersectionObserver' in window){new IntersectionObserver(function(e){if(!v.muted&&!e[0].isIntersecting)v.pause();},{threshold:.2}).observe(v);}
+document.addEventListener('visibilitychange',function(){if(document.hidden&&!v.muted)v.pause();});
 })();
 </script>
 </body>
