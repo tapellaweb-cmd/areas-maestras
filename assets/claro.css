@@ -1,0 +1,32 @@
+body,.hero,.txt{--text:#0F2340;--text-dim:#4A5B78;--gold-1:#8A6420;--gold-2:#8A6420;--gold-3:#8A6420;--line:rgba(15,35,64,.2)}
+body,.hero,.txt{background:#EEF3FB!important;color:#0F2340}
+.tst,.alt{--text:#E9E4D6;--text-dim:#98A4BC;--gold-1:#F3DE9E;--gold-2:#D8AE56;--gold-3:#A67C2E;--line:rgba(216,174,86,.22);color:#E9E4D6}
+.txt .card,.txt .module,.txt .topic,.txt .t{background:rgba(255,255,255,.75)!important}
+.txt h1,.txt h2,.txt h3,.hero h1,.hero h2{color:#0F2340}
+.btn,.btn-mentor{--gold-1:#F3DE9E;--gold-2:#D8AE56;--gold-3:#A67C2E}
+section.tst:has(.t){background:#DCE7F5!important;--text:#0F2340;--text-dim:#4A5B78;--gold-1:#8A6420;--gold-2:#8A6420;--gold-3:#8A6420;--line:rgba(15,35,64,.2);color:#0F2340}
+section.tst:has(.t) .t{background:#1F3F66!important;--text:#E9E4D6;--text-dim:#98A4BC;--gold-1:#F3DE9E;--gold-2:#D8AE56;--line:rgba(216,174,86,.22);color:#E9E4D6}
+section.tst:has(.t) .btn{--gold-1:#F3DE9E;--gold-2:#D8AE56;--gold-3:#A67C2E}
+.plan-main,.pay-alt{background:#1F3F66!important;--text:#E9E4D6;--text-dim:#B4BFD3;--gold-1:#F3DE9E;--gold-2:#D8AE56;--gold-3:#A67C2E;--line:rgba(216,174,86,.3);color:#E9E4D6}
+.eyebrow{color:#0F2340!important}
+.plan-main .eyebrow,.pay-alt .eyebrow{color:#F3DE9E!important}
+.txt .plan-main h3,.txt .pay-alt h3,.plan-main h3,.pay-alt h3{color:#F3DE9E!important}
+.hero-head .hero-sub{color:#0F2340!important}
+.vsound{color:#fff!important}
+.cta-list .bonus-li{font-weight:400!important;color:var(--text)!important}.cta-list .bonus-li b{font-weight:400!important;letter-spacing:0!important;text-transform:none!important;color:var(--text)!important}
+.plan-main>h3{font-size:clamp(28px,8vw,44px)!important}.plan-main .cta-list li:not(.bonus-li){font-size:19px!important}
+.plan-main>h3{font-weight:400!important}
+.plan-main>h3{font-size:clamp(27px,7.7vw,43px)!important}
+/* PRUEBA tarjetas blancas */
+section.tst:has(.t) .t,.plan-main,.pay-alt{background:#fff!important;border:1px solid #C9A24D!important;box-shadow:0 6px 22px rgba(15,35,64,.08)!important;--text:#0F2340;--text-dim:#4A5B78;--gold-1:#8A6420;--gold-2:#8A6420;--gold-3:#8A6420;--line:rgba(15,35,64,.18);color:#0F2340!important}
+.txt .plan-main h3,.txt .pay-alt h3,.plan-main h3,.pay-alt h3,.plan-main>h3{color:#8A6420!important}
+.plan-main .eyebrow,.pay-alt .eyebrow{color:#0F2340!important}
+.plan-main .btn,.pay-alt .btn{--gold-1:#F3DE9E;--gold-2:#D8AE56;--gold-3:#A67C2E}
+.cta-list .bonus-li{background:#F4F8FD!important;border-color:#C9A24D!important}
+.t blockquote,.t strong,.t-head strong,.plan-main li,.plan-main p,.pay-alt p,.pay-alt div{color:#0F2340}
+.t span,.t-aporte{color:#4A5B78!important}
+.price-box .price,.price-save,.pay-mini{color:#8A6420!important}
+.pay-big,.price-ars,.price-ars b{color:#0F2340!important}
+.eyebrow:has(.eb-list){font-size:clamp(23px,6.4vw,28px)!important;font-weight:600!important;letter-spacing:.06em!important;line-height:1.25}
+.eyebrow:has(.eb-list){font-size:clamp(14px,3.8vw,16px)!important;letter-spacing:.08em!important}
+.tools-close+.tools-close{margin-top:2px!important}.tools-close:has(+.tools-close){margin-bottom:0!important}
